@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>事件流</title>
+</head>
+<body>
+	<div id="box">
+		<input type="button" value="按钮" id="btn" onclick="alert('HTML事件')">
+		<input type="button" value="按钮2" id="btn2">
+		<input type="button" value="按钮3" id='btn3'>
+	</div>
+	<!-- <script src="dom.js"></script> -->
+	<script src="script.js"></script>
+	<script>
+		function showMes(){
+  		alert('成功调用');
+		};
+
+		eventUtil.addHandler(bnt3,'click',showMes);
+	</script>
+</body>
+</html>
